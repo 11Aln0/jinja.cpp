@@ -89,5 +89,20 @@ To support a wide range of deployment environments:
 
 ## Testing Strategy
 
-*   **Real Data**: We use `tests/test_chat_template.json` generated from the official Python `transformers` library on typically supported models.
-*   **Fuzzy Matching**: For dynamic content (like dates), tests use regex normalization to ensure pass consistency across time and environments.
+*   **Real Data**: We use `tests/test_chat_template.json` generated from the official Python `transformers` library.
+*   **Fuzzy Matching**: For dynamic content (like dates), tests use regex normalization to ensure pass consistency.
+
+### Tested Models
+The following models are automatically verified in our test suite:
+
+*   **Qwen**: `Qwen2.5-3B-Instruct`, `Qwen2.5-VL-3B-Instruct`, `Qwen2.5-Omni-3B`, `Qwen2.5-7B-Instruct-1M`, `Qwen2.5-Math-7B-Instruct`, `QwQ-32B`
+*   **Qwen3**: `Qwen3-4B`, `Qwen3-4B-Instruct`, `Qwen3-4B-Thinking`, `Qwen3-VL-4B-Instruct`, `Qwen3-VL-4B-Thinking`, `Qwen3Guard-Gen-4B`, `Qwen3-Coder-30B-A3B-Instruct`, `Qwen3-Omni-30B-A3B-Instruct`, `Qwen3-Omni-30B-A3B-Thinking`
+*   **DeepSeek**: `DeepSeek-R1-Distill-Qwen-7B`, `DeepSeek-V3.2`, `DeepSeek-R1`
+*   **GLM**: `ZhipuAI/GLM-4.5V`, `ZhipuAI/GLM-4.6V`
+*   **Yi**: `01ai/Yi-VL-6B`, `01ai/Yi-1.5-6B-Chat`
+*   **SmolLM**: `HuggingFaceTB/SmolLM-135M-Instruct`, `HuggingFaceTB/SmolVLM-256M-Instruct`, `HuggingFaceTB/SmolLM2-135M-Instruct`, `HuggingFaceTB/SmolLM3-3B`
+*   **Gemma**: `google/gemma-3-4b-it`, `google/gemma-3n-E4B-it`
+*   **Mistral**: `mistralai/Ministral-3-3B-Instruct-2512`
+*   **Llama**: `llama-2-7b`, `Meta-Llama-3-8B-Instruct`, `Llama-3.2-3B-Instruct`
+*   **Phi**: `Phi-3.5-mini-instruct`, `Phi-3.5-vision-instruct`, `phi-4`, `Phi-4-mini-reasoning`
+*   **MobileLLM**: `LLM-Research/MobileLLM-125M`

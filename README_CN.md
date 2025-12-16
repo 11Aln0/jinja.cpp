@@ -11,6 +11,7 @@
 ## 特性
 
 - **C++11 兼容**：确保在旧版编译器和嵌入式系统上的最大兼容性。
+- **易于集成**：核心库仅包含**一个头文件** (`include/jinja.hpp`) 和**一个源文件** (`src/jinja.cpp`)，非常方便拷贝并集成到任何项目中。
 - **轻量级**：依赖极少 (仅依赖 `nlohmann/json`，已包含在项目中)。
 - **专注 LLM**：原生支持 `messages`, `tools`, `add_generation_prompt` 以及特殊 token 的处理。
 - **类型安全**：使用 `nlohmann::json` 进行上下文管理。
@@ -20,12 +21,13 @@
 ## 支持的模型
 
 已基于以下模型的真实模板进行测试验证：
-- **Llama 3 / 3.1 / 3.2** (Instruct & Vision)
-- **Qwen 2.5** (Coder, Math, VL, Omni)
-- **Qwen 3** (Instruct, Thinking, QwQ)
+- **Qwen 2.5 / 3** (Coder, Math, VL, Omni, Instruct, Thinking, QwQ)
 - **DeepSeek** (V3, R1)
+- **Llama 3 / 3.1 / 3.2** (Instruct & Vision)
 - **Mistral**
 - **Gemma**
+- **SmolLM**
+- **Phi**
 - 更多...
 
 ## 构建指南

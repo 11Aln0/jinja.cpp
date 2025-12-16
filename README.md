@@ -11,6 +11,7 @@ It focuses on supporting the subset of Jinja2 used by modern Large Language Mode
 ## Features
 
 - **C++11 Compatible**: Ensures maximum compatibility across older compiler versions and embedded systems.
+- **Easy Integration**: The core library consists of just **one header file** (`include/jinja.hpp`) and **one source file** (`src/jinja.cpp`), making it extremely easy to copy and drop into any project.
 - **Lightweight**: Minimal dependencies (only `nlohmann/json`).
 - **LLM Focused**: Native support for `messages`, `tools`, `add_generation_prompt`, and special tokens.
 - **Strictly Typed**: Uses `nlohmann::json` for context management.
@@ -20,12 +21,13 @@ It focuses on supporting the subset of Jinja2 used by modern Large Language Mode
 ## Supported Models
 
 Tested and verified with templates from:
-- **Llama 3 / 3.1 / 3.2** (Instruct & Vision)
-- **Qwen 2.5** (Coder, Math, VL, Omni)
-- **Qwen 3** (Instruct, Thinking, QwQ)
+- **Qwen 2.5 / 3** (Coder, Math, VL, Omni, Instruct, Thinking, QwQ)
 - **DeepSeek** (V3, R1)
+- **Llama 3 / 3.1 / 3.2** (Instruct & Vision)
 - **Mistral**
 - **Gemma**
+- **SmolLM**
+- **Phi**
 - And more...
 
 ## Build Instructions

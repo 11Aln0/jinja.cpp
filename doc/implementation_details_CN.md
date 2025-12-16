@@ -91,3 +91,18 @@ Lexer 部分模拟了 Jinja2 的 `lstrip_blocks` 和 `trim_blocks` 行为。手�
 
 *   **真实数据**: 我们使用 `tests/test_chat_template.json`，该文件是从官方 Python `transformers` 库针对通常支持的模型生成的。
 *   **模糊匹配**: 对于动态内容 (如日期)，测试使用正则归一化来确跨时间和环境的通过一致性。
+
+### 已通过测试的模型 (Tested Models)
+我们在测试套件中自动验证了以下模型：
+
+*   **Qwen**: `Qwen2.5-3B-Instruct`, `Qwen2.5-VL-3B-Instruct`, `Qwen2.5-Omni-3B`, `Qwen2.5-7B-Instruct-1M`, `Qwen2.5-Math-7B-Instruct`, `QwQ-32B`
+*   **Qwen3**: `Qwen3-4B`, `Qwen3-4B-Instruct`, `Qwen3-4B-Thinking`, `Qwen3-VL-4B-Instruct`, `Qwen3-VL-4B-Thinking`, `Qwen3Guard-Gen-4B`, `Qwen3-Coder-30B-A3B-Instruct`, `Qwen3-Omni-30B-A3B-Instruct`, `Qwen3-Omni-30B-A3B-Thinking`
+*   **DeepSeek**: `DeepSeek-R1-Distill-Qwen-7B`, `DeepSeek-V3.2`, `DeepSeek-R1`
+*   **GLM**: `ZhipuAI/GLM-4.5V`, `ZhipuAI/GLM-4.6V`
+*   **Yi**: `01ai/Yi-VL-6B`, `01ai/Yi-1.5-6B-Chat`
+*   **SmolLM**: `HuggingFaceTB/SmolLM-135M-Instruct`, `HuggingFaceTB/SmolVLM-256M-Instruct`, `HuggingFaceTB/SmolLM2-135M-Instruct`, `HuggingFaceTB/SmolLM3-3B`
+*   **Gemma**: `google/gemma-3-4b-it`, `google/gemma-3n-E4B-it`
+*   **Mistral**: `mistralai/Ministral-3-3B-Instruct-2512`
+*   **Llama**: `llama-2-7b`, `Meta-Llama-3-8B-Instruct`, `Llama-3.2-3B-Instruct`
+*   **Phi**: `Phi-3.5-mini-instruct`, `Phi-3.5-vision-instruct`, `phi-4`, `Phi-4-mini-reasoning`
+*   **MobileLLM**: `LLM-Research/MobileLLM-125M`
