@@ -1,5 +1,5 @@
 /*
- jinja.hpp - A lightweight C++11 Jinja2 template engine for LLM chat templates.
+ jinja.hpp - A lightweight, single-header C++11 Jinja2 template engine for LLM chat templates.
  https://github.com/wangzhaode/jinja.cpp
 
  Licensed under the Apache License, Version 2.0 (the "License");

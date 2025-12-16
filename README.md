@@ -4,7 +4,7 @@
 ![Build Status](https://github.com/wangzhaode/jinja.cpp/actions/workflows/build.yml/badge.svg)
 [![中文版本](https://img.shields.io/badge/Language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-green)](README_CN.md)
 
-A lightweight, minimal C++11 implementation of the Jinja2 template engine, designed specifically for **LLM Chat Templates** (HuggingFace style).
+A lightweight, single-header C++11 Jinja2 template engine designed for LLM chat templates.
 
 It focuses on supporting the subset of Jinja2 used by modern Large Language Models (LLMs) like Llama 3, Qwen 2.5/3, DeepSeek, and others, enabling seamless inference integration in C++ environments.
 

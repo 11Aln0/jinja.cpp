@@ -4,7 +4,7 @@
 ![Build Status](https://github.com/wangzhaode/jinja.cpp/actions/workflows/build.yml/badge.svg)
 [![English Version](https://img.shields.io/badge/Language-English-green)](README.md)
 
-一个轻量级、完全兼容 C++11 的 Jinja2 模板引擎实现，专为 **LLM 对话模板** (HuggingFace 风格) 设计。
+> 一个轻量级、单头文件的 C++11 Jinja2 模板引擎，专为 LLM Chat 模板设计。
 
 它专注于支持现代大语言模型 (如 Llama 3, Qwen 2.5/3, DeepSeek 等) 所需的 Jinja2 语法子集，使得在 C++ 环境中进行推理集成变得无缝且高效。
 
