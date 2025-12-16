@@ -4,13 +4,19 @@
 ![Build Status](https://github.com/wangzhaode/jinja.cpp/actions/workflows/build.yml/badge.svg)
 [![中文版本](https://img.shields.io/badge/Language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-green)](README_CN.md)
 
-A lightweight, single-header C++11 Jinja2 template engine designed for LLM chat templates.
+A lightweight, single-header C++11 Jinja2 template engine designed for LLM chat templates. ** (HuggingFace style).
 
 It focuses on supporting the subset of Jinja2 used by modern Large Language Models (LLMs) like Llama 3, Qwen 2.5/3, DeepSeek, and others, enabling seamless inference integration in C++ environments.
 
 ## Features
 
 - **C++11 Compatible**: Ensures maximum compatibility across older compiler versions and embedded systems.
+- **Lightweight**: Minimal dependencies (only `nlohmann/json`).
+- **LLM Focused**: Native support for `messages`, `tools`, `add_generation_prompt`, and special tokens.
+- **Strictly Typed**: Uses `nlohmann::json` for context management.
+- **Custom Function Interop**: Easily inject C++ functions (e.g., `strftime_now`) into templates.
+- **Robust**: Validated against official Python `transformers` outputs using fuzzy matching tests.
+
 ## Integration
 
 The library is a single header file. Just copy `jinja.hpp` to your project's include directory (or root).
@@ -26,11 +32,6 @@ You can check the library version using standard macros:
     // Use jinja.cpp features
 #endif
 ```
-- **Lightweight**: Minimal dependencies (only `nlohmann/json`).
-- **LLM Focused**: Native support for `messages`, `tools`, `add_generation_prompt`, and special tokens.
-- **Strictly Typed**: Uses `nlohmann::json` for context management.
-- **Custom Function Interop**: Easily inject C++ functions (e.g., `strftime_now`) into templates.
-- **Robust**: Validated against official Python `transformers` outputs using fuzzy matching tests.
 
 ## Supported Models
 
