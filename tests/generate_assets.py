@@ -231,7 +231,28 @@ def get_scenarios():
                 {"role": "system", "content": f"Current Date: {current_date}"},
                 {"role": "user", "content": "Date?"}
             ]
-        }
+        },
+        {
+            "desc": "empty_assistant_content",
+            "messages": [
+                {"role": "user", "content": "Say nothing"},
+                {"role": "assistant", "content": ""}
+            ]
+        },
+        {
+            "desc": "empty_user_content",
+            "messages": [
+                {"role": "user", "content": ""},
+                {"role": "assistant", "content": "No input received."}
+            ]
+        },
+        {
+            "desc": "empty_user_assistant_content",
+            "messages": [
+                {"role": "user", "content": ""},
+                {"role": "assistant", "content": ""}
+            ]
+        },
     ]
 
 def main():

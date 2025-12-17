@@ -34,6 +34,12 @@
 #define JINJA_VERSION_PATCH 1
 #define JINJA_VERSION_STRING STR(JINJA_VERSION_MAJOR) "." STR(JINJA_VERSION_MINOR) "." STR(JINJA_VERSION_PATCH)
 
+#ifdef JINJA_DEBUG
+    #define JINJA_LOG(x) std::cerr << "[JINJA_DEBUG] " << x << std::endl
+#else
+    #define JINJA_LOG(x) do {} while(0)
+#endif
+
 namespace jinja {
 
 using json = nlohmann::json;
@@ -116,6 +122,23 @@ std::unique_ptr<T> make_unique(Args&&... args) {
 }
 
 inline std::string to_python_string(const json& val);
+
+inline std::string token_type_to_string(int type) {
+    switch (type) {
+        case 0: return "Text";
+        case 1: return "ExprStart";
+        case 2: return "ExprEnd";
+        case 3: return "BlockStart";
+        case 4: return "BlockEnd";
+        case 5: return "Identifier";
+        case 6: return "String";
+        case 7: return "Number";
+        case 8: return "Operator";
+        case 9: return "Punctuation";
+        case 10: return "Eof";
+        default: return "Unknown";
+    }
+}
 
 inline std::string to_python_repr(const json& val) {
     if (val.is_string()) {
@@ -287,6 +310,13 @@ public:
         std::vector<Token> tokens;
         bool trim_next = false;
 
+        auto add_token = [&](Token::Type t, const std::string& v) {
+            tokens.push_back({t, v});
+            JINJA_LOG("Lexer Token: [" << token_type_to_string(t) << "] "
+                      << (v == "\n" ? "\\n" : v));
+        };
+        JINJA_LOG("Lexer: Start tokenizing input length " << m_input.length());
+
         while (m_cursor < m_input.length()) {
             if (m_state == State::Text) {
                 // Find next {{ or {% or {#
@@ -308,7 +338,7 @@ public:
                          text.erase(0, text.find_first_not_of(" \n\r\t"));
                          trim_next = false;
                     }
-                    if (!text.empty()) tokens.push_back({Token::Text, text});
+                    if (!text.empty()) add_token(Token::Text, text);
                     m_cursor = m_input.length();
                 } else {
                     std::string text = std::string(m_input.substr(m_cursor, next - m_cursor));
@@ -345,15 +375,15 @@ public:
                         }
                     }
 
-                    if (!text.empty()) tokens.push_back({Token::Text, text});
+                    if (!text.empty()) add_token(Token::Text, text);
 
                     m_cursor = next;
                     if (token_kind == 1) { // Expr
-                        tokens.push_back({Token::ExpressionStart, "{{"});
+                        add_token(Token::ExpressionStart, "{{");
                         m_state = State::Expression;
                          if (trim_prev) m_cursor++;
                     } else if (token_kind == 2) { // Block
-                        tokens.push_back({Token::BlockStart, "{%"});
+                        add_token(Token::BlockStart, "{%");
                         m_state = State::Block;
                         if (trim_prev) m_cursor++;
                     } else if (token_kind == 3) { // Comment
@@ -397,8 +427,8 @@ public:
                 }
 
                 if (trim_current) {
-                    if (m_state == State::Expression) tokens.push_back({Token::ExpressionEnd, "}}"});
-                    else tokens.push_back({Token::BlockEnd, "%}"});
+                    if (m_state == State::Expression) add_token(Token::ExpressionEnd, "}}");
+                    else add_token(Token::BlockEnd, "%}");
                     m_cursor += 3;
                     m_state = State::Text;
                     trim_next = true;
@@ -407,13 +437,13 @@ public:
 
                 // Normal end tags
                 if (m_state == State::Expression && m_input.substr(m_cursor, 2) == "}}") {
-                    tokens.push_back({Token::ExpressionEnd, "}}"});
+                    add_token(Token::ExpressionEnd, "}}");
                     m_cursor += 2;
                     m_state = State::Text;
                     continue;
                 }
                 if (m_state == State::Block && m_input.substr(m_cursor, 2) == "%}") {
-                    tokens.push_back({Token::BlockEnd, "%}"});
+                    add_token(Token::BlockEnd, "%}");
                     m_cursor += 2;
                     m_state = State::Text;
 
@@ -426,14 +456,14 @@ public:
 
                 char c = m_input[m_cursor];
                 if (isalpha(c) || c == '_') {
-                    tokens.push_back({Token::Identifier, read_identifier()});
+                    add_token(Token::Identifier, read_identifier());
                 } else if (isdigit(c)) {
-                    tokens.push_back({Token::Number, read_number()});
+                    add_token(Token::Number, read_number());
                 } else if (c == '\'' || c == '"') {
-                    tokens.push_back({Token::String, read_string(c)});
+                    add_token(Token::String, read_string(c));
                 } else if (strchr("[](){}:.,", c)) {
                     std::string op(1, c);
-                    tokens.push_back({Token::Punctuation, op});
+                    add_token(Token::Punctuation, op);
                     m_cursor++;
                 } else {
                     // Operator or other symbols
@@ -446,12 +476,12 @@ public:
                         else if (c == '>' && next == '=') op = ">=";
                     }
                     if (op.length() > 1) m_cursor++; // Consume extra char
-                    tokens.push_back({Token::Operator, op});
+                    add_token(Token::Operator, op);
                     m_cursor++;
                 }
             }
         }
-        tokens.push_back({Token::Eof, ""});
+        add_token(Token::Eof, "");
         return tokens;
     }
 
@@ -592,6 +622,7 @@ public:
                 return (*it)[name];
             }
         }
+        JINJA_LOG("Context: Variable '" << name << "' not found, returning UNDEFINED");
         static json undefined_val = UNDEFINED;
         return undefined_val;
     }
@@ -645,7 +676,9 @@ struct VarExpr : Expr {
     std::string name;
     explicit VarExpr(std::string n) : name(std::move(n)) {}
     json evaluate(Context& context) override {
-        return context.get(name);
+        json val = context.get(name);
+        JINJA_LOG("Eval Var: '" << name << "' -> " << (val.is_string() ? val.get<std::string>() : val.dump()));
+        return val;
     }
     std::string dump() const override { return name; }
 };
@@ -1327,8 +1360,12 @@ struct ForStmt : Node {
         : loop_vars(std::move(vars)), iterable(std::move(iter)), body(std::move(b)), filter_expr(std::move(filter)) {}
 
     void render(Context& context, std::string& out) override {
+        JINJA_LOG("Render For: Start loop processing");
         json iter_val = iterable->evaluate(context);
-        if (is_undefined(iter_val)) return;
+        if (is_undefined(iter_val)) {
+            JINJA_LOG("Render For: Iterable is undefined, skipping.");
+            return;
+        }
 
         std::vector<json> items;
 
@@ -1382,6 +1419,7 @@ struct ForStmt : Node {
 
         len = filtered_items.size();
         index = 0;
+        JINJA_LOG("Render For: Iterating " << len << " items.");
 
         for (const auto& item : filtered_items) {
              json loop_scope;
@@ -1422,6 +1460,7 @@ struct IfNode : Node {
 
     void render(Context& context, std::string& out) override {
         bool res = is_truthy(condition->evaluate(context));
+        JINJA_LOG("Render If: Condition evaluated to " << (res ? "TRUE" : "FALSE"));
         if (res) {
              for (const auto& node : true_body) node->render(context, out);
         } else {
@@ -1438,6 +1477,7 @@ public:
     explicit Parser(std::vector<Token> tokens) : m_tokens(std::move(tokens)), m_cursor(0) {}
 
     std::vector<std::unique_ptr<Node>> parse() {
+        JINJA_LOG("Parser: Start parsing");
         std::vector<std::unique_ptr<Node>> nodes;
         while (!is_at_end()) {
             if (check(Token::Text)) {
@@ -1541,6 +1581,7 @@ private:
     }
 
     std::unique_ptr<Node> parse_if() {
+        JINJA_LOG("Parser: Parsing IF block");
         // We consumed {% and 'if'
         std::unique_ptr<Expr> condition = parse_expression();
         if (check(Token::BlockEnd)) advance(); // eat %}
@@ -1760,11 +1801,13 @@ private:
     std::unique_ptr<Expr> parse_not() {
         if (check(Token::Identifier) && peek().value == "not") {
             advance();
-            // Unary not.
-            // We can treat as BinaryExpr "==" false? Or separate UnaryExpr.
-            // For simplicity, implement UnaryExpr or just BinaryExpr with null left?
-            // Let's do BinaryExpr("==", val, false)
-            return make_unique<BinaryExpr>("==", parse_not(), make_unique<LiteralExpr>(false));
+            // (not Expr) -> (Expr ? false : true)。
+            auto expr = parse_not();
+            return make_unique<TernaryExpr>(
+                std::move(expr),
+                make_unique<LiteralExpr>(false),
+                make_unique<LiteralExpr>(true)
+            );
          }
          return parse_compare();
     }

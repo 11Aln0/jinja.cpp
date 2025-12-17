@@ -397,7 +397,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -405,7 +405,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -807,7 +852,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -815,7 +860,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -1217,7 +1307,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -1225,7 +1315,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -1627,7 +1762,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -1635,7 +1770,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -2037,7 +2217,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -2045,7 +2225,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -2358,7 +2583,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -2366,7 +2591,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -2768,7 +3038,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -2776,7 +3046,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
       }
     ]
   },
@@ -3178,7 +3493,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -3186,7 +3501,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -3588,7 +3948,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -3596,7 +3956,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
       }
     ]
   },
@@ -3998,7 +4403,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -4006,7 +4411,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -4408,7 +4858,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -4416,7 +4866,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n<|im_end|>\n"
       }
     ]
   },
@@ -4660,7 +5155,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -4668,7 +5163,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST USER's query belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The USER's query does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The USER's query contains prohibited content.\n**Safety: Controversial**: The USER's query does not explicitly contain prohibited content, but its intent, context, or potential responses could be misinterpreted, misused, or exploited to generate unsafe content under certain conditions.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\nJailbreak.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\nUSER: Current Date: 2025-12-16\n\nDate?\n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **USER's query** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST USER's query belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The USER's query does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The USER's query contains prohibited content.\n**Safety: Controversial**: The USER's query does not explicitly contain prohibited content, but its intent, context, or potential responses could be misinterpreted, misused, or exploited to generate unsafe content under certain conditions.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\nJailbreak.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\nUSER: Current Date: 2025-12-17\n\nDate?\n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **USER's query** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST ASSISTANT's response belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n3) Determine if THE LAST ASSISTANT's response is a refusal to the USER's query.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The ASSISTANT's response does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The ASSISTANT's response contains prohibited content.\n**Safety: Controversial**: The ASSISTANT's response is not explicitly harmful, but could become risky or offensive depending on context or audience.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN REFUSAL POLICY>\n**Refusal: Yes**: The ASSISTANT refused to answer or did not comply with the USER's request.\n**Refusal: No**: The ASSISTANT directly answered or complied with the USER's request.\n<END REFUSAL POLICY>\n\n<BEGIN CONVERSATION>\n\nUSER: Say nothing\n\nASSISTANT: \n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **ASSISTANT's response** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.\n - The third line must be one of: 'Refusal: Yes', 'Refusal: No'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST ASSISTANT's response belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n3) Determine if THE LAST ASSISTANT's response is a refusal to the USER's query.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The ASSISTANT's response does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The ASSISTANT's response contains prohibited content.\n**Safety: Controversial**: The ASSISTANT's response is not explicitly harmful, but could become risky or offensive depending on context or audience.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN REFUSAL POLICY>\n**Refusal: Yes**: The ASSISTANT refused to answer or did not comply with the USER's request.\n**Refusal: No**: The ASSISTANT directly answered or complied with the USER's request.\n<END REFUSAL POLICY>\n\n<BEGIN CONVERSATION>\n\nUSER: \n\nASSISTANT: No input received.\n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **ASSISTANT's response** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.\n - The third line must be one of: 'Refusal: Yes', 'Refusal: No'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST ASSISTANT's response belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n3) Determine if THE LAST ASSISTANT's response is a refusal to the USER's query.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The ASSISTANT's response does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The ASSISTANT's response contains prohibited content.\n**Safety: Controversial**: The ASSISTANT's response is not explicitly harmful, but could become risky or offensive depending on context or audience.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN REFUSAL POLICY>\n**Refusal: Yes**: The ASSISTANT refused to answer or did not comply with the USER's request.\n**Refusal: No**: The ASSISTANT directly answered or complied with the USER's request.\n<END REFUSAL POLICY>\n\n<BEGIN CONVERSATION>\n\nUSER: \n\nASSISTANT: \n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **ASSISTANT's response** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.\n - The third line must be one of: 'Refusal: Yes', 'Refusal: No'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
       }
     ]
   },
@@ -4836,7 +5376,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -4844,7 +5384,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -5088,7 +5673,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -5096,7 +5681,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-16<｜User｜>Date?"
+        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-17<｜User｜>Date?"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜>Say nothing<｜Assistant｜><｜end▁of▁sentence｜>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜>No input received.<｜end▁of▁sentence｜>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜><｜end▁of▁sentence｜>"
       }
     ]
   },
@@ -5340,7 +5970,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -5348,7 +5978,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-16<｜User｜>Date?"
+        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-17<｜User｜>Date?"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜>Say nothing<｜Assistant｜><｜end▁of▁sentence｜>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜>No input received.<｜end▁of▁sentence｜>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜><｜end▁of▁sentence｜>"
       }
     ]
   },
@@ -5516,7 +6191,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -5524,7 +6199,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-16<|user|>\nDate?"
+        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-17<|user|>\nDate?"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\nSay nothing<|assistant|>\n<think></think>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\n<|assistant|>\n<think></think>\nNo input received."
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\n<|assistant|>\n<think></think>"
       }
     ]
   },
@@ -5692,7 +6412,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -5700,7 +6420,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-16<|user|>\nDate?"
+        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-17<|user|>\nDate?"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\nSay nothing<|assistant|>\n<think></think>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\n<|assistant|>\n<think></think>\nNo input received."
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "[gMASK]<sop><|user|>\n<|assistant|>\n<think></think>"
       }
     ]
   },
@@ -5944,7 +6709,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -5952,7 +6717,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -6120,7 +6930,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -6372,7 +7182,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -6380,7 +7190,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-16<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -6402,7 +7257,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi<|im_end|>\n"
       },
       {
         "description": "system_user_assistant",
@@ -6421,7 +7276,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helper.\n\n<|im_start|>user\nWho are you?<|im_end|>\n<|im_start|>assistant\nI am AI.<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helper.\n\n<|im_start|>user\nWho are you?<|im_end|>\n<|im_start|>assistant\nI am AI.<|im_end|>\n"
       },
       {
         "description": "consecutive_users",
@@ -6436,7 +7291,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nPart 1<|im_end|>\n<|im_start|>user\nPart 2<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nPart 1<|im_end|>\n<|im_start|>user\nPart 2<|im_end|>\n"
       },
       {
         "description": "gen_prompt_true",
@@ -6447,7 +7302,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
       },
       {
         "description": "gen_prompt_false",
@@ -6458,7 +7313,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n"
       },
       {
         "description": "disable_thinking",
@@ -6469,7 +7324,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
       },
       {
         "description": "tools_provided_no_call",
@@ -6480,7 +7335,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -6549,7 +7404,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n",
         "tools": [
           {
             "type": "function",
@@ -6625,7 +7480,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n{\"temp\": 20}<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n{\"temp\": 20}<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -6714,7 +7569,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY and SF?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n20C<|im_end|>\n<|im_start|>user\n15C<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY and SF?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n20C<|im_end|>\n<|im_start|>user\n15C<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -6775,14 +7630,14 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSolve<|im_end|>\n<|im_start|>assistant\n42<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSolve<|im_end|>\n<|im_start|>assistant\n42<|im_end|>\n"
       },
       {
         "description": "date_injection_sim",
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -6790,7 +7645,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 16 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nCurrent Date: 2025-12-16\n\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nCurrent Date: 2025-12-17\n\n<|im_start|>user\nDate?<|im_end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -7012,7 +7912,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -7020,7 +7920,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-16\n\nDate?<end_of_turn>\n"
+        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-17\n\nDate?<end_of_turn>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\nSay nothing<end_of_turn>\n<start_of_turn>model\n<end_of_turn>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\nNo input received.<end_of_turn>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\n<end_of_turn>\n"
       }
     ]
   },
@@ -7242,7 +8187,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -7250,7 +8195,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-16\n\nDate?<end_of_turn>\n"
+        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-17\n\nDate?<end_of_turn>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\nSay nothing<end_of_turn>\n<start_of_turn>model\n<end_of_turn>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\nNo input received.<end_of_turn>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\n<end_of_turn>\n"
       }
     ]
   },
@@ -7652,7 +8642,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -7660,7 +8650,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCurrent Date: 2025-12-16<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCurrent Date: 2025-12-17<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nSay nothing<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nNo input received.<|eot_id|>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
       }
     ]
   },
@@ -7682,7 +8717,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>"
       },
       {
         "description": "system_user_assistant",
@@ -7701,7 +8736,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\nYou are a helper.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWho are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nI am AI.<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\nYou are a helper.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWho are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nI am AI.<|eot_id|>"
       },
       {
         "description": "consecutive_users",
@@ -7716,7 +8751,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 1<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 2<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 1<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 2<|eot_id|>"
       },
       {
         "description": "gen_prompt_true",
@@ -7727,7 +8762,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
       },
       {
         "description": "gen_prompt_false",
@@ -7738,7 +8773,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|>"
       },
       {
         "description": "disable_thinking",
@@ -7749,7 +8784,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
       },
       {
         "description": "tools_provided_no_call",
@@ -7760,7 +8795,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         "tools": [
           {
             "type": "function",
@@ -7829,7 +8864,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|>",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|>",
         "tools": [
           {
             "type": "function",
@@ -7905,7 +8940,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|><|start_header_id|>ipython<|end_header_id|>\n\n\"{\\\"temp\\\": 20}\"<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|><|start_header_id|>ipython<|end_header_id|>\n\n\"{\\\"temp\\\": 20}\"<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         "tools": [
           {
             "type": "function",
@@ -7966,14 +9001,14 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSolve<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n42<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSolve<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n42<|eot_id|>"
       },
       {
         "description": "date_injection_sim",
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -7981,7 +9016,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 16 Dec 2025\n\nCurrent Date: 2025-12-16<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\nCurrent Date: 2025-12-17<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSay nothing<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nNo input received.<|eot_id|>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
       }
     ]
   },
@@ -8225,7 +9305,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -8233,7 +9313,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>\nCurrent Date: 2025-12-16<|end|>\n<|user|>\nDate?<|end|>\n<|endoftext|>"
+        "expected": "<|system|>\nCurrent Date: 2025-12-17<|end|>\n<|user|>\nDate?<|end|>\n<|endoftext|>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\nSay nothing<|end|>\n<|assistant|>\n<|end|>\n<|endoftext|>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\n<|end|>\n<|assistant|>\nNo input received.<|end|>\n<|endoftext|>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\n<|end|>\n<|assistant|>\n<|end|>\n<|endoftext|>"
       }
     ]
   },
@@ -8477,7 +9602,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -8485,7 +9610,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>\nCurrent Date: 2025-12-16<|end|>\n<|user|>\nDate?<|end|>\n"
+        "expected": "<|system|>\nCurrent Date: 2025-12-17<|end|>\n<|user|>\nDate?<|end|>\n"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\nSay nothing<|end|>\n<|assistant|>\n<|end|>\n"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\n<|end|>\n<|assistant|>\nNo input received.<|end|>\n"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|user|>\n<|end|>\n<|assistant|>\n<|end|>\n"
       }
     ]
   },
@@ -8729,7 +9899,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -8737,7 +9907,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system<|im_sep|>Current Date: 2025-12-16<|im_end|><|im_start|>user<|im_sep|>Date?<|im_end|>"
+        "expected": "<|im_start|>system<|im_sep|>Current Date: 2025-12-17<|im_end|><|im_start|>user<|im_sep|>Date?<|im_end|>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user<|im_sep|>Say nothing<|im_end|><|im_start|>assistant<|im_sep|><|im_end|>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user<|im_sep|><|im_end|><|im_start|>assistant<|im_sep|>No input received.<|im_end|>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|im_start|>user<|im_sep|><|im_end|><|im_start|>assistant<|im_sep|><|im_end|>"
       }
     ]
   },
@@ -8981,7 +10196,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-16"
+            "content": "Current Date: 2025-12-17"
           },
           {
             "role": "user",
@@ -8989,7 +10204,52 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft. Current Date: 2025-12-16<|end|><|user|>Date?<|end|><|endoftext|>"
+        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft. Current Date: 2025-12-17<|end|><|user|>Date?<|end|><|endoftext|>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft.<|end|><|user|>Say nothing<|end|><|assistant|><|end|><|endoftext|>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft.<|end|><|user|><|end|><|assistant|>No input received.<|end|><|endoftext|>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft.<|end|><|user|><|end|><|assistant|><|end|><|endoftext|>"
       }
     ]
   }
