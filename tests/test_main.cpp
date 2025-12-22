@@ -12,7 +12,6 @@
 
 using json = nlohmann::json;
 
-#if 1
 namespace Color {
     const std::string RESET   = "\033[0m";
     const std::string RED     = "\033[31m";
@@ -23,18 +22,6 @@ namespace Color {
     const std::string BOLD    = "\033[1m";
     const std::string GREY    = "\033[90m";
 }
-#else
-namespace Color {
-    const std::string RESET   = "";
-    const std::string RED     = "";
-    const std::string GREEN   = "";
-    const std::string YELLOW  = "";
-    const std::string BLUE    = "";
-    const std::string CYAN    = "";
-    const std::string BOLD    = "";
-    const std::string GREY    = "";
-}
-#endif
 
 std::string load_file(const std::string& path) {
     std::ifstream f(path);

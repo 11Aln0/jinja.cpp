@@ -43,7 +43,9 @@
 namespace jinja {
 
 using json = nlohmann::json;
-using UserFunction = std::function<json(const std::vector<json>&)>;
+using json = nlohmann::json;
+using Argument = std::pair<std::string, json>;
+using UserFunction = std::function<json(const std::vector<Argument>&)>;
 
 /**
  * @brief A lightweight, C++11 compatible Jinja2 template renderer.
@@ -97,6 +99,8 @@ public:
 private:
     struct Impl;
     std::unique_ptr<Impl> m_impl;
+
+    void register_builtins();
 };
 
 } // namespace jinja
@@ -1121,8 +1125,8 @@ struct TestExpr : Expr {
             result = val.is_boolean() && val.get<bool>() == false;
         }
         // TODO: other tests
-
-        if (is_not) return !result;
+        if (is_not) result = !result;
+        JINJA_LOG("TestExpr: " << expr->dump() << " is " << (is_not ? "not " : "") << test_name << " -> " << (result ? "TRUE" : "FALSE"));
         return result;
     }
     std::string dump() const override { return "(" + expr->dump() + " is " + (is_not ? "not " : "") + test_name + ")"; }
@@ -1202,9 +1206,9 @@ struct MacroNode : Node {
 
 inline json CallExpr::evaluate(Context& context) {
     if (auto func = context.get_function(func_name)) {
-        std::vector<json> arg_vals;
+        std::vector<Argument> arg_vals;
         for (auto& arg : args) {
-            arg_vals.push_back(arg.second->evaluate(context));
+            arg_vals.push_back({arg.first, arg.second->evaluate(context)});
         }
         return func(arg_vals);
     }
@@ -1229,69 +1233,9 @@ inline json CallExpr::evaluate(Context& context) {
             }
             context.pop_scope();
             return out;
-        } else if (func_name == "namespace") {
-            json ns = json::object();
-            for (auto& arg : args) {
-                if (!arg.first.empty()) {
-                    ns[arg.first] = arg.second->evaluate(context);
-                }
-            }
-            return ns;
-        } else if (func_name == "range") {
-             long start=0, stop=0, step=1;
-             if (args.size() == 1) {
-                 stop = args[0].second->evaluate(context).get<long>();
-             } else if (args.size() == 2) {
-                 start = args[0].second->evaluate(context).get<long>();
-                 stop = args[1].second->evaluate(context).get<long>();
-             } else if (args.size() >= 3) {
-                 start = args[0].second->evaluate(context).get<long>();
-                 stop = args[1].second->evaluate(context).get<long>();
-                 step = args[2].second->evaluate(context).get<long>();
-             }
-             json arr = json::array();
-             if (step > 0) {
-                 for (long i = start; i < stop; i += step) arr.push_back(i);
-             } else if (step < 0) {
-                 for (long i = start; i > stop; i += step) arr.push_back(i);
-             }
-             return arr;
-        }
+    }
 
-        Macro* macro = context.get_macro(func_name);
-        if (macro) {
-            json scope = json::object();
-            size_t i = 0;
-            for (const auto& call_arg : args) {
-               if (!call_arg.first.empty()) {
-                   scope[call_arg.first] = call_arg.second->evaluate(context);
-               } else {
-                   if (i < macro->args.size()) {
-                       scope[macro->args[i]] = call_arg.second->evaluate(context);
-                       i++;
-                   }
-               }
-            }
-            context.push_scope(scope);
-            std::string out;
-            for (const auto& node : macro->body) {
-                node->render(context, out);
-            }
-            context.pop_scope();
-            return out;
-        } else if (func_name == "strftime_now") {
-             std::string format = "%Y-%m-%d";
-             if (args.size() > 0) {
-                 format = args[0].second->evaluate(context).get<std::string>();
-             }
-             std::time_t t = std::time(nullptr);
-             std::tm tm = *std::localtime(&t);
-             std::stringstream ss;
-             ss << std::put_time(&tm, format.c_str());
-             return ss.str();
-        }
-
-        return "";
+    return "";
 }
 
 struct TextNode : Node {
@@ -1460,7 +1404,7 @@ struct IfNode : Node {
 
     void render(Context& context, std::string& out) override {
         bool res = is_truthy(condition->evaluate(context));
-        JINJA_LOG("Render If: Condition evaluated to " << (res ? "TRUE" : "FALSE"));
+        JINJA_LOG("Render If: (" << condition->dump() << ") evaluated to " << (res ? "TRUE" : "FALSE"));
         if (res) {
              for (const auto& node : true_body) node->render(context, out);
         } else {
@@ -2092,7 +2036,58 @@ inline Template::Template(const std::string& template_str, const json& default_c
     : m_impl(make_unique<Impl>()) {
     m_impl->template_str = template_str;
     m_impl->default_context = default_context;
+
+    register_builtins();
+
     m_impl->parse();
+}
+
+inline void Template::register_builtins() {
+    // Built-in: range
+    add_function("range", [](const std::vector<Argument>& args) -> json {
+         long start=0, stop=0, step=1;
+         if (args.size() == 1) {
+             stop = args[0].second.get<long>();
+         } else if (args.size() == 2) {
+             start = args[0].second.get<long>();
+             stop = args[1].second.get<long>();
+         } else if (args.size() >= 3) {
+             start = args[0].second.get<long>();
+             stop = args[1].second.get<long>();
+             step = args[2].second.get<long>();
+         }
+         json arr = json::array();
+         if (step > 0) {
+             for (long i = start; i < stop; i += step) arr.push_back(i);
+         } else if (step < 0) {
+             for (long i = start; i > stop; i += step) arr.push_back(i);
+         }
+         return arr;
+    });
+
+    // Built-in: namespace
+    add_function("namespace", [](const std::vector<Argument>& args) -> json {
+        json ns = json::object();
+        for (const auto& arg : args) {
+            if (!arg.first.empty()) {
+                ns[arg.first] = arg.second;
+            }
+        }
+        return ns;
+    });
+
+    // Built-in: strftime_now
+    add_function("strftime_now", [](const std::vector<Argument>& args) -> json {
+        std::string format = "%Y-%m-%d";
+        if (args.size() > 0) {
+            format = args[0].second.get<std::string>();
+        }
+        std::time_t t = std::time(nullptr);
+        std::tm tm = *std::localtime(&t);
+        std::stringstream ss;
+        ss << std::put_time(&tm, format.c_str());
+        return ss.str();
+    });
 }
 
 inline Template::~Template() = default;
@@ -2115,6 +2110,9 @@ inline std::string Template::render(const json& context) const {
 
 inline void Template::add_function(const std::string& name, UserFunction func) {
     m_impl->functions[name] = std::move(func);
+    if (!m_impl->default_context.contains(name)) {
+        m_impl->default_context[name] = "<function " + name + ">";
+    }
 }
 
 inline std::string Template::apply_chat_template(
