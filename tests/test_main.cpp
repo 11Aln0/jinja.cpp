@@ -8,10 +8,9 @@
 #include <regex>
 // #define JINJA_DEBUG
 #include "jinja.hpp"
-#include <nlohmann/json.hpp>
 #include <chrono>
 
-using json = nlohmann::json;
+using json = ujson::json;
 
 namespace Color {
     const std::string RESET   = "\033[0m";
@@ -92,7 +91,7 @@ int main(int argc, char** argv) {
         if (!model_filter.empty() && model_id.find(model_filter) == std::string::npos) {
             continue;
         }
-        json& model_data = it.value();
+        json model_data = it.value();
         total_models++;
 
         std::cout << "\n" << Color::BLUE << Color::BOLD << "┏━━ Model: " << model_id << Color::RESET << std::endl;

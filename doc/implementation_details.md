@@ -27,7 +27,7 @@ The engine follows a standard compiler/interpreter pipeline:
 3.  **AST (`Node` hierarchy)**:
     *   Base `Node` class with virtual `render(Context&, string& out)` method.
     *   Nodes: `TextNode`, `PrintNode`, `ForStmt`, `IfNode`, `SetNode`, `MacroNode`.
-    *   Expressions (`Expr` hierarchy) evaluate to `nlohmann::json` values.
+    *   Expressions (`Expr` hierarchy) evaluate to `jinja::json` values.
 
 4.  **Interpreter / Renderer (`Template::render`)**:
     *   Iterates through root nodes and calls `render`.
@@ -65,8 +65,11 @@ The engine follows a standard compiler/interpreter pipeline:
 
 ## Key Implementation Features
 
-### 1. JSON Data Model
-We utilize `nlohmann::json` as the unified data type for all variables. This simplifies type checking and allows easy integration with JSON-based LLM APIs.
+### 1. Unified JSON Bridge (`ujson`)
+We utilize a custom bridge layer called `ujson` (Universal JSON) to abstract the underlying JSON library.
+*   **Default**: Uses `nlohmann/json` for ease of use and standard compliance.
+*   **High Performance**: Supports `RapidJSON` (via `UJSON_USE_RAPIDJSON`) for faster parsing and reduced memory overhead, which is critical for high-throughput LLM serving.
+*   **Abstraction**: All internal logic uses `ujson::json`, exposed as `jinja::json` to the user.
 
 ### 2. Custom Function / Filter Dispatch
 *   **Filters**: Implemented in `FilterExpr`. Standard Jinja2 filters like `safe`, `tojson`, `trim`, `lower` are hardcoded.

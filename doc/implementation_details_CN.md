@@ -27,7 +27,7 @@
 3.  **抽象语法树 (AST - `Node` 层次结构)**:
     *   基类 `Node` 具有虚函数 `render(Context&, string& out)`。
     *   节点类型：`TextNode`, `PrintNode`, `ForStmt`, `IfNode`, `SetNode`, `MacroNode`。
-    *   表达式 (`Expr` 层次结构) 计算结果为 `nlohmann::json` 值。
+    *   表达式 (`Expr` 层次结构) 计算结果为 `jinja::json` 值。
 
 4.  **解释器 / 渲染器 (Interpreter / Renderer - `Template::render`)**:
     *   遍历根节点并调用 `render`。
@@ -65,8 +65,11 @@
 
 ## 关键实现特性
 
-### 1. JSON 数据模型
-我们使用 `nlohmann::json` 作为所有变量的统一数据类型。这简化了类型检查，并允许与基于 JSON 的 LLM API 轻松集成。
+### 1. 统一 JSON 桥接层 (`ujson`)
+我们实现了一个名为 `ujson` (Universal JSON) 的轻量级桥接层，用于抽象底层的 JSON 库。
+*   **默认配置**：使用 `nlohmann/json`，兼顾易用性和标准兼容性。
+*   **高性能需求**：支持 `RapidJSON` 后端 (通过 `UJSON_USE_RAPIDJSON` 开启)，提供更快的解析速度和更低的内存开销，这对于高并发的 LLM 推理服务至关重要。
+*   **抽象封装**：内部所有逻辑均基于 `ujson::json` 编写，并通过 `jinja::json` 别名暴露给用户。
 
 ### 2. 自定义函数 / 过滤器分发
 *   **过滤器 (Filters)**: 在 `FilterExpr` 中实现。标准的 Jinja2 过滤器如 `safe`, `tojson`, `trim`, `lower` 是硬编码的。

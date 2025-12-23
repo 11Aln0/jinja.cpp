@@ -11,15 +11,21 @@ It focuses on supporting the subset of Jinja2 used by modern Large Language Mode
 ## Features
 
 - **C++11 Compatible**: Ensures maximum compatibility across older compiler versions and embedded systems.
-- **Lightweight**: Minimal dependencies (only `nlohmann/json`).
+- **Flexible JSON Backend**: Supports both `nlohmann/json` (default) and `RapidJSON` via a unified `ujson` bridge.
+- **Lightweight**: Minimal dependencies, with all required headers included in `third_party/`.
 - **LLM Focused**: Native support for `messages`, `tools`, `add_generation_prompt`, and special tokens.
-- **Strictly Typed**: Uses `nlohmann::json` for context management.
+- **Unified Context**: Uses `jinja::json` (an alias to `ujson::json`) for seamless context management.
 - **Custom Function Interop**: Easily inject C++ functions (e.g., `strftime_now`) into templates.
-- **Robust**: Validated against official Python `transformers` outputs using fuzzy matching tests.
+- **Robust**: Validated against official Python `transformers` outputs using fuzzy matching tests on 390+ cases.
 
 ## Integration
 
-The library is a single header file. Just copy `jinja.hpp` to your project's include directory (or root).
+### Headers
+The library consists of two main headers:
+- `jinja.hpp`: Core template engine.
+- `third_party/ujson.hpp`: Unified JSON bridge.
+
+Just copy the `jinja.hpp` and `third_party` directory to your project.
 
 ### Feature Checking (Versioning)
 
@@ -58,6 +64,13 @@ cmake ..
 make
 ```
 
+### Enable RapidJSON Backend
+To use `RapidJSON` instead of `nlohmann/json` for better performance:
+```bash
+cmake .. -DUJSON_USE_RAPIDJSON=ON
+```
+*Note: Ensure `third_party/rapidjson` is available.*
+
 ### Run Tests
 
 The project includes a comprehensive test suite based on real-world model templates.
@@ -78,7 +91,7 @@ int main() {
     std::string template_str = "Hello {{ name }}!";
     jinja::Template tpl(template_str);
 
-    nlohmann::json context;
+    jinja::json context;
     context["name"] = "World";
 
     std::string result = tpl.render(context);
@@ -96,7 +109,7 @@ int main() {
 std::string chat_template_str = "...";
 jinja::Template tpl(chat_template_str);
 
-nlohmann::json messages = nlohmann::json::array({
+jinja::json messages = jinja::json::array({
     {{"role", "user"}, {"content", "Hello!"}}
 });
 
@@ -104,7 +117,7 @@ nlohmann::json messages = nlohmann::json::array({
 std::string prompt = tpl.apply_chat_template(
     messages,
     true, // add_generation_prompt
-    nlohmann::json::array() // tools
+    jinja::json::array() // tools
 );
 ```
 
@@ -113,7 +126,7 @@ std::string prompt = tpl.apply_chat_template(
 You can register custom C++ functions to be called from within the template.
 
 ```cpp
-tpl.add_function("strftime_now", [](const std::vector<nlohmann::json>& args) {
+tpl.add_function("strftime_now", [](const std::vector<jinja::json>& args) {
     // Return current time string
     return "2025-12-16";
 });

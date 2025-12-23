@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        backend: [nlohmann, rapidjson]
 
     steps:
     - uses: actions/checkout@v3
@@ -22,7 +25,11 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake ..
+        if [ "${{ matrix.backend }}" = "rapidjson" ]; then
+          cmake .. -DUJSON_USE_RAPIDJSON=ON
+        else
+          cmake ..
+        fi
         make
 
     - name: Run Tests

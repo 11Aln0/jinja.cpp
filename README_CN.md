@@ -11,12 +11,12 @@
 ## 特性
 
 - **C++11 兼容**：确保在旧版编译器和嵌入式系统上的最大兼容性。
-- **易于集成**：核心库仅包含**一个头文件** (`jinja.hpp`，位于根目录)，非常方便拷贝并集成到任何项目中。
-- **轻量级**：依赖极少 (仅依赖 `nlohmann/json`，已包含在项目中)。
+- **灵活的 JSON 后端**：通过统一的 `ujson` 桥接层支持 `nlohmann/json` (默认) 和 `RapidJSON`。
+- **轻量级**：依赖极少，所有必要头文件均已包含在 `third_party/` 目录下。
 - **专注 LLM**：原生支持 `messages`, `tools`, `add_generation_prompt` 以及特殊 token 的处理。
-- **类型安全**：使用 `nlohmann::json` 进行上下文管理。
+- **统一上下文**：使用 `jinja::json` (即 `ujson::json` 的别名) 进行无缝的上下文管理。
 - **自定义函数**：支持轻松注入 C++ 函数 (如 `strftime_now`) 到模板中。
-- **健壮性**：通过模糊匹配测试，与官方 Python `transformers` 输出进行对齐验证。
+- **健壮性**：通过 390+ 条测试用例验证，与官方 Python `transformers` 输出进行对齐。
 
 ## 支持的模型
 
@@ -43,6 +43,13 @@ cmake ..
 make
 ```
 
+### 开启 RapidJSON 后端
+为了获得更好的性能，可以切换到 `RapidJSON` 后端：
+```bash
+cmake .. -DUJSON_USE_RAPIDJSON=ON
+```
+*注：请确保 `third_party/rapidjson` 存在。*
+
 ### 运行测试
 
 本项目包含一个基于真实模型模板的全面测试套件。
@@ -63,7 +70,7 @@ int main() {
     std::string template_str = "Hello {{ name }}!";
     jinja::Template tpl(template_str);
 
-    nlohmann::json context;
+    jinja::json context;
     context["name"] = "World";
 
     std::string result = tpl.render(context);
@@ -81,7 +88,7 @@ int main() {
 std::string chat_template_str = "...";
 jinja::Template tpl(chat_template_str);
 
-nlohmann::json messages = nlohmann::json::array({
+jinja::json messages = jinja::json::array({
     {{"role", "user"}, {"content", "你好！"}}
 });
 
@@ -89,7 +96,7 @@ nlohmann::json messages = nlohmann::json::array({
 std::string prompt = tpl.apply_chat_template(
     messages,
     true, // add_generation_prompt
-    nlohmann::json::array() // tools
+    jinja::json::array() // tools
 );
 ```
 
@@ -98,7 +105,7 @@ std::string prompt = tpl.apply_chat_template(
 你可以注册自定义 C++ 函数，供模板内部调用。
 
 ```cpp
-tpl.add_function("strftime_now", [](const std::vector<nlohmann::json>& args) {
+tpl.add_function("strftime_now", [](const std::vector<jinja::json>& args) {
     // 返回当前时间字符串
     return "2025-12-16";
 });
