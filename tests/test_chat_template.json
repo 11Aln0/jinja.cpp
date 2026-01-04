@@ -397,7 +397,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -405,7 +405,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -852,7 +852,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -860,7 +860,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -1307,7 +1307,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -1315,7 +1315,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -1762,7 +1762,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -1770,7 +1770,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -2217,7 +2217,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -2225,7 +2225,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -2583,7 +2583,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -2591,7 +2591,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -3038,7 +3038,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -3046,7 +3046,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -3493,7 +3493,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -3501,7 +3501,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -3948,7 +3948,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -3956,7 +3956,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -4403,7 +4403,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -4411,7 +4411,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -4858,7 +4858,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -4866,7 +4866,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -5155,7 +5155,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -5163,7 +5163,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST USER's query belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The USER's query does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The USER's query contains prohibited content.\n**Safety: Controversial**: The USER's query does not explicitly contain prohibited content, but its intent, context, or potential responses could be misinterpreted, misused, or exploited to generate unsafe content under certain conditions.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\nJailbreak.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\nUSER: Current Date: 2025-12-17\n\nDate?\n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **USER's query** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+        "expected": "<|im_start|>user\n# Task:\n1) Evaluate whether THE LAST USER's query belongs to safe or unsafe content based on our safety policy.\n2) Identify the category of unsafe content found.\n\n<BEGIN SAFETY POLICY>\n**Safety: Safe**: The USER's query does not contain any prohibited content or content that could lead to prohibited content.\n**Safety: Unsafe**: The USER's query contains prohibited content.\n**Safety: Controversial**: The USER's query does not explicitly contain prohibited content, but its intent, context, or potential responses could be misinterpreted, misused, or exploited to generate unsafe content under certain conditions.\n<END SAFETY POLICY>\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nViolent.\nNon-violent Illegal Acts.\nSexual Content or Sexual Acts.\nPII.\nSuicide & Self-Harm.\nUnethical Acts.\nPolitically Sensitive Topics.\nCopyright Violation.\nJailbreak.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\nUSER: Current Date: 2026-01-04\n\nDate?\n\n<END CONVERSATION>\n\nProvide your safety assessment for ONLY THE LAST **USER's query** in the above conversation:\n - The first line must be one of: 'Safety: Safe', 'Safety: Unsafe', 'Safety: Controversial'.\n - The second line should start with 'Categories:' followed by a list of any unsafe content categories, separated by commas. If the content is safe, use 'Categories: None'.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
       },
       {
         "description": "empty_assistant_content",
@@ -5376,7 +5376,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -5384,7 +5384,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -5673,7 +5673,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -5681,7 +5681,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-17<｜User｜>Date?"
+        "expected": "<｜begin▁of▁sentence｜>Current Date: 2026-01-04<｜User｜>Date?"
       },
       {
         "description": "empty_assistant_content",
@@ -5970,7 +5970,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -5978,7 +5978,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<｜begin▁of▁sentence｜>Current Date: 2025-12-17<｜User｜>Date?"
+        "expected": "<｜begin▁of▁sentence｜>Current Date: 2026-01-04<｜User｜>Date?"
       },
       {
         "description": "empty_assistant_content",
@@ -6191,7 +6191,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -6199,7 +6199,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-17<|user|>\nDate?"
+        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2026-01-04<|user|>\nDate?"
       },
       {
         "description": "empty_assistant_content",
@@ -6412,7 +6412,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -6420,7 +6420,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2025-12-17<|user|>\nDate?"
+        "expected": "[gMASK]<sop><|system|>\nCurrent Date: 2026-01-04<|user|>\nDate?"
       },
       {
         "description": "empty_assistant_content",
@@ -6709,7 +6709,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -6717,7 +6717,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -6930,7 +6930,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -7182,7 +7182,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -7190,7 +7190,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\nCurrent Date: 2025-12-17<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\nCurrent Date: 2026-01-04<|im_end|>\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -7257,7 +7257,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi<|im_end|>\n"
       },
       {
         "description": "system_user_assistant",
@@ -7276,7 +7276,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helper.\n\n<|im_start|>user\nWho are you?<|im_end|>\n<|im_start|>assistant\nI am AI.<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helper.\n\n<|im_start|>user\nWho are you?<|im_end|>\n<|im_start|>assistant\nI am AI.<|im_end|>\n"
       },
       {
         "description": "consecutive_users",
@@ -7291,7 +7291,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nPart 1<|im_end|>\n<|im_start|>user\nPart 2<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nPart 1<|im_end|>\n<|im_start|>user\nPart 2<|im_end|>\n"
       },
       {
         "description": "gen_prompt_true",
@@ -7302,7 +7302,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
       },
       {
         "description": "gen_prompt_false",
@@ -7313,7 +7313,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n"
       },
       {
         "description": "disable_thinking",
@@ -7324,7 +7324,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHello<|im_end|>\n<|im_start|>assistant\n"
       },
       {
         "description": "tools_provided_no_call",
@@ -7335,7 +7335,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -7404,7 +7404,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n",
         "tools": [
           {
             "type": "function",
@@ -7480,7 +7480,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n{\"temp\": 20}<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n{\"temp\": 20}<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -7569,7 +7569,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY and SF?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n20C<|im_end|>\n<|im_start|>user\n15C<|im_end|>\n<|im_start|>assistant\n",
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n### Tools\n\nYou may call one or more functions to assist with the user query.\nYou are provided with function signatures within <tools></tools> XML tags:\n\n<tools>\n{'type': 'function', 'function': {'name': 'get_weather', 'description': 'Get current weather', 'parameters': {'type': 'object', 'properties': {'location': {'type': 'string'}, 'unit': {'type': 'string', 'enum': ['c', 'f']}}, 'required': ['location']}}}\n{'type': 'function', 'function': {'name': 'search', 'description': 'Search web', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string'}}, 'required': ['query']}}}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n\n<|im_end|>\n<|im_start|>user\nWeather in NY and SF?<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\n20C<|im_end|>\n<|im_start|>user\n15C<|im_end|>\n<|im_start|>assistant\n",
         "tools": [
           {
             "type": "function",
@@ -7630,14 +7630,14 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSolve<|im_end|>\n<|im_start|>assistant\n42<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSolve<|im_end|>\n<|im_start|>assistant\n42<|im_end|>\n"
       },
       {
         "description": "date_injection_sim",
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -7645,7 +7645,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nCurrent Date: 2025-12-17\n\n<|im_start|>user\nDate?<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nCurrent Date: 2026-01-04\n\n<|im_start|>user\nDate?<|im_end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -7660,7 +7660,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nSay nothing<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       },
       {
         "description": "empty_user_content",
@@ -7675,7 +7675,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\nNo input received.<|im_end|>\n"
       },
       {
         "description": "empty_user_assistant_content",
@@ -7690,7 +7690,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 17 December 2025\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
+        "expected": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 04 January 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n"
       }
     ]
   },
@@ -7912,7 +7912,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -7920,7 +7920,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-17\n\nDate?<end_of_turn>\n"
+        "expected": "<bos><start_of_turn>user\nCurrent Date: 2026-01-04\n\nDate?<end_of_turn>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -8187,7 +8187,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -8195,7 +8195,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<bos><start_of_turn>user\nCurrent Date: 2025-12-17\n\nDate?<end_of_turn>\n"
+        "expected": "<bos><start_of_turn>user\nCurrent Date: 2026-01-04\n\nDate?<end_of_turn>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -8642,7 +8642,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -8650,7 +8650,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCurrent Date: 2025-12-17<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCurrent Date: 2026-01-04<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
       },
       {
         "description": "empty_assistant_content",
@@ -8717,7 +8717,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>"
       },
       {
         "description": "system_user_assistant",
@@ -8736,7 +8736,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\nYou are a helper.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWho are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nI am AI.<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\nYou are a helper.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWho are you?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nI am AI.<|eot_id|>"
       },
       {
         "description": "consecutive_users",
@@ -8751,7 +8751,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 1<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 2<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 1<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nPart 2<|eot_id|>"
       },
       {
         "description": "gen_prompt_true",
@@ -8762,7 +8762,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
       },
       {
         "description": "gen_prompt_false",
@@ -8773,7 +8773,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|>"
       },
       {
         "description": "disable_thinking",
@@ -8784,7 +8784,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHello<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
       },
       {
         "description": "tools_provided_no_call",
@@ -8795,7 +8795,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         "tools": [
           {
             "type": "function",
@@ -8864,7 +8864,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|>",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|>",
         "tools": [
           {
             "type": "function",
@@ -8940,7 +8940,7 @@
           }
         ],
         "add_generation_prompt": true,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|><|start_header_id|>ipython<|end_header_id|>\n\n\"{\\\"temp\\\": 20}\"<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nEnvironment: ipython\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.Do not use variables.\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"get_weather\",\n        \"description\": \"Get current weather\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"location\": {\n                    \"type\": \"string\"\n                },\n                \"unit\": {\n                    \"type\": \"string\",\n                    \"enum\": [\n                        \"c\",\n                        \"f\"\n                    ]\n                }\n            },\n            \"required\": [\n                \"location\"\n            ]\n        }\n    }\n}\n\n{\n    \"type\": \"function\",\n    \"function\": {\n        \"name\": \"search\",\n        \"description\": \"Search web\",\n        \"parameters\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"query\": {\n                    \"type\": \"string\"\n                }\n            },\n            \"required\": [\n                \"query\"\n            ]\n        }\n    }\n}\n\nWeather in NY?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{\"name\": \"get_weather\", \"parameters\": \"{\\\"location\\\":\\\"NY\\\"}\"}<|eot_id|><|start_header_id|>ipython<|end_header_id|>\n\n\"{\\\"temp\\\": 20}\"<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
         "tools": [
           {
             "type": "function",
@@ -9001,14 +9001,14 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSolve<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n42<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSolve<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n42<|eot_id|>"
       },
       {
         "description": "date_injection_sim",
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -9016,7 +9016,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\nCurrent Date: 2025-12-17<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\nCurrent Date: 2026-01-04<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nDate?<|eot_id|>"
       },
       {
         "description": "empty_assistant_content",
@@ -9031,7 +9031,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSay nothing<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nSay nothing<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
       },
       {
         "description": "empty_user_content",
@@ -9046,7 +9046,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nNo input received.<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nNo input received.<|eot_id|>"
       },
       {
         "description": "empty_user_assistant_content",
@@ -9061,7 +9061,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 17 Dec 2025\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
+        "expected": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 04 Jan 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n<|eot_id|>"
       }
     ]
   },
@@ -9305,7 +9305,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -9313,7 +9313,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>\nCurrent Date: 2025-12-17<|end|>\n<|user|>\nDate?<|end|>\n<|endoftext|>"
+        "expected": "<|system|>\nCurrent Date: 2026-01-04<|end|>\n<|user|>\nDate?<|end|>\n<|endoftext|>"
       },
       {
         "description": "empty_assistant_content",
@@ -9602,7 +9602,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -9610,7 +9610,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>\nCurrent Date: 2025-12-17<|end|>\n<|user|>\nDate?<|end|>\n"
+        "expected": "<|system|>\nCurrent Date: 2026-01-04<|end|>\n<|user|>\nDate?<|end|>\n"
       },
       {
         "description": "empty_assistant_content",
@@ -9899,7 +9899,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -9907,7 +9907,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|im_start|>system<|im_sep|>Current Date: 2025-12-17<|im_end|><|im_start|>user<|im_sep|>Date?<|im_end|>"
+        "expected": "<|im_start|>system<|im_sep|>Current Date: 2026-01-04<|im_end|><|im_start|>user<|im_sep|>Date?<|im_end|>"
       },
       {
         "description": "empty_assistant_content",
@@ -10196,7 +10196,7 @@
         "messages": [
           {
             "role": "system",
-            "content": "Current Date: 2025-12-17"
+            "content": "Current Date: 2026-01-04"
           },
           {
             "role": "user",
@@ -10204,7 +10204,7 @@
           }
         ],
         "add_generation_prompt": false,
-        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft. Current Date: 2025-12-17<|end|><|user|>Date?<|end|><|endoftext|>"
+        "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft. Current Date: 2026-01-04<|end|><|user|>Date?<|end|><|endoftext|>"
       },
       {
         "description": "empty_assistant_content",
@@ -10250,6 +10250,461 @@
         ],
         "add_generation_prompt": false,
         "expected": "<|system|>Your name is Phi, an AI math expert developed by Microsoft.<|end|><|user|><|end|><|assistant|><|end|><|endoftext|>"
+      }
+    ]
+  },
+  "Tencent-Hunyuan/HY-MT1.5-1.8B": {
+    "template": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}<｜hy_begin▁of▁sentence｜>{{ system_message }}<｜hy_place▁holder▁no▁3｜>{% else %}{% set loop_messages = messages %}<｜hy_begin▁of▁sentence｜>{% endif %}{% for message in loop_messages %}{% if message['role'] == 'user' %}<｜hy_User｜>{{ message['content'] }}{% elif message['role'] == 'assistant' %}<｜hy_Assistant｜>{{ message['content'] }}<｜hy_place▁holder▁no▁2｜>{% endif %}{% endfor %}{% if add_generation_prompt %}<｜hy_Assistant｜>{% else %}<｜hy_place▁holder▁no▁8｜>{% endif %}",
+    "special_tokens": {
+      "bos_token": "<｜hy_begin▁of▁sentence｜>",
+      "eos_token": "<｜hy_place▁holder▁no▁2｜>",
+      "unk_token": "",
+      "pad_token": "<｜hy_▁pad▁｜>"
+    },
+    "cases": [
+      {
+        "description": "basic_user",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hi"
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Hi<｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "system_user_assistant",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a helper."
+          },
+          {
+            "role": "user",
+            "content": "Who are you?"
+          },
+          {
+            "role": "assistant",
+            "content": "I am AI."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜>You are a helper.<｜hy_place▁holder▁no▁3｜><｜hy_User｜>Who are you?<｜hy_Assistant｜>I am AI.<｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "consecutive_users",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Part 1"
+          },
+          {
+            "role": "user",
+            "content": "Part 2"
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Part 1<｜hy_User｜>Part 2<｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "gen_prompt_true",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hello"
+          }
+        ],
+        "add_generation_prompt": true,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Hello<｜hy_Assistant｜>"
+      },
+      {
+        "description": "gen_prompt_false",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hello"
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Hello<｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "disable_thinking",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hello"
+          }
+        ],
+        "add_generation_prompt": true,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Hello<｜hy_Assistant｜>"
+      },
+      {
+        "description": "tools_provided_no_call",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Hi"
+          }
+        ],
+        "add_generation_prompt": true,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Hi<｜hy_Assistant｜>",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Get current weather",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "c",
+                      "f"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search",
+              "description": "Search web",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "description": "assistant_tool_call_history",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Weather in NY?"
+          },
+          {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_123",
+                "type": "function",
+                "function": {
+                  "name": "get_weather",
+                  "arguments": "{\"location\":\"NY\"}"
+                }
+              }
+            ]
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Weather in NY?<｜hy_Assistant｜><｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Get current weather",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "c",
+                      "f"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search",
+              "description": "Search web",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "description": "tool_response_execution",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Weather in NY?"
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "id": "call_123",
+                "type": "function",
+                "function": {
+                  "name": "get_weather",
+                  "arguments": "{\"location\":\"NY\"}"
+                }
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "call_123",
+            "name": "get_weather",
+            "content": "{\"temp\": 20}"
+          }
+        ],
+        "add_generation_prompt": true,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Weather in NY?<｜hy_Assistant｜><｜hy_place▁holder▁no▁2｜><｜hy_Assistant｜>",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Get current weather",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "c",
+                      "f"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search",
+              "description": "Search web",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "description": "parallel_tool_calls",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Weather in NY and SF?"
+          },
+          {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_1",
+                "type": "function",
+                "function": {
+                  "name": "get_weather",
+                  "arguments": "{\"location\":\"NY\"}"
+                }
+              },
+              {
+                "id": "call_2",
+                "type": "function",
+                "function": {
+                  "name": "get_weather",
+                  "arguments": "{\"location\":\"SF\"}"
+                }
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "call_1",
+            "name": "get_weather",
+            "content": "20C"
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "call_2",
+            "name": "get_weather",
+            "content": "15C"
+          }
+        ],
+        "add_generation_prompt": true,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Weather in NY and SF?<｜hy_Assistant｜><｜hy_place▁holder▁no▁2｜><｜hy_Assistant｜>",
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_weather",
+              "description": "Get current weather",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "c",
+                      "f"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          },
+          {
+            "type": "function",
+            "function": {
+              "name": "search",
+              "description": "Search web",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "query"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "description": "reasoning_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Solve"
+          },
+          {
+            "role": "assistant",
+            "content": "42",
+            "reasoning_content": "Thinking process..."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Solve<｜hy_Assistant｜>42<｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "date_injection_sim",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Current Date: 2026-01-04"
+          },
+          {
+            "role": "user",
+            "content": "Date?"
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜>Current Date: 2026-01-04<｜hy_place▁holder▁no▁3｜><｜hy_User｜>Date?<｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "empty_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say nothing"
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜>Say nothing<｜hy_Assistant｜><｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "empty_user_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": "No input received."
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜><｜hy_Assistant｜>No input received.<｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>"
+      },
+      {
+        "description": "empty_user_assistant_content",
+        "messages": [
+          {
+            "role": "user",
+            "content": ""
+          },
+          {
+            "role": "assistant",
+            "content": ""
+          }
+        ],
+        "add_generation_prompt": false,
+        "expected": "<｜hy_begin▁of▁sentence｜><｜hy_User｜><｜hy_Assistant｜><｜hy_place▁holder▁no▁2｜><｜hy_place▁holder▁no▁8｜>"
       }
     ]
   }

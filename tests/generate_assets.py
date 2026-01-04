@@ -50,7 +50,8 @@ MODELS = [
     "LLM-Research/Phi-3.5-vision-instruct",
     "LLM-Research/phi-4",
     "LLM-Research/Phi-4-mini-reasoning",
-    "LLM-Research/MobileLLM-125M"
+    "LLM-Research/MobileLLM-125M",
+    "Tencent-Hunyuan/HY-MT1.5-1.8B",
 ]
 
 def get_scenarios():
