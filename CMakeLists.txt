@@ -22,11 +22,13 @@ if(UJSON_USE_RAPIDJSON)
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/third_party/rapidjson/include>
     )
 elseif(JINJA_USE_EXTERNAL_JSON)
-    # 使用外部 nlohmann_json，不 include third_party
-    find_package(nlohmann_json REQUIRED)
-    target_link_libraries(jinja INTERFACE nlohmann_json::nlohmann_json)
+    if(TARGET nlohmann_json::nlohmann_json)
+        target_link_libraries(jinja INTERFACE nlohmann_json::nlohmann_json)
+    else()
+        find_package(nlohmann_json REQUIRED)
+        target_link_libraries(jinja INTERFACE nlohmann_json::nlohmann_json)
+    endif()
 else()
-    # 使用内嵌的 third_party
     target_include_directories(jinja INTERFACE 
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/third_party>
     )
