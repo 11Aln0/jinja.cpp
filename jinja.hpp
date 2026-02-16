@@ -15,6 +15,8 @@
  limitations under the License.
  */
 
+#pragma once
+
 #include <string>
 #include <vector>
 #include <map>
@@ -1190,11 +1192,11 @@ struct Macro {
     std::string name;
     std::vector<std::string> args;
     std::vector<std::unique_ptr<Node>> body;
-    ~Macro(); // Defined just below
+    inline ~Macro(); // Defined just below
 };
 
 // Macro implementation
-Macro::~Macro() = default;
+inline Macro::~Macro() = default;
 
 struct MacroNode : Node {
     Macro macro;
